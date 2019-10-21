@@ -1,2 +1,4 @@
-# Free_SMS_Sender
-Notification FREE SMS
+#API SMS Free Mobile
+
+Activer la Notification par SMS 
+[www.mobile.free.fr](www.mobile.free.fr)
