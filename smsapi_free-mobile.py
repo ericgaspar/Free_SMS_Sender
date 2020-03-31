@@ -17,12 +17,12 @@ encodingTable = {"\n": "%0A", " ": "%20", "!": "%21", "\"": "%22", "#": "%23",
 
 
 def sendMessage(msg, user=user, password=password):
-	"""Send SMS notification with free-mobile"""
-    for char in msg:
-        if char in encodingTable:
-        char = encodingTable[char]
-    msg = "".join(msg)
+  """Send SMS notification with free-mobile"""
+  for char in msg:
+    if char in encodingTable:
+      char = encodingTable[char]
+  msg = "".join(msg)
 
-    url = "https://smsapi.free-mobile.fr/sendmsg?user=" + \
+  url = "https://smsapi.free-mobile.fr/sendmsg?user=" + \
         user + "&pass=" + password + "&msg=" + msg
-    requests.get(url)
+  requests.get(url)
